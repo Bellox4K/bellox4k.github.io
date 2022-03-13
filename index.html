@@ -15,10 +15,21 @@ body {
     </style>
   </head>
   <body>
+window.onload = function(){
+
+document.querySelector('#no').addEventListener("click" , function(){
+    document.querySelector('#confirm').style.opacity = '0';
+})
+
+document.querySelector('#yes').addEventListener("click" , function(){
+    document.querySelector('#confirm').style.opacity = '0';
+    document.querySelector("audio").play();
+})
+}
    <div id="confirm"><p>get real</p>
             <button id="yes">Yes</button>
             <button id="no">No</button>
         </div>
-        <audio src="getreal.mp3" controls loop>
+        <audio src="getreal.mp3" controls loop hidden>
   </body>
 </html>
