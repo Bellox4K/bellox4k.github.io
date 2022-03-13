@@ -19,7 +19,7 @@ body {
             <button id="yes">yes</button>
             <button id="no">no</button>
         </div>
-        <audio src="realdeal.mp3" controls loop hidden>
+        <audio src="getreal.mp3" controls loop hidden>
 </audio>
 <script type="text/javascript" src="what.js"></script>
     <div>
@@ -40,6 +40,11 @@ body {
  
             document.getElementById("btnID")
                     .style.display = "none";
+var audio = new Audio("realdeal.mp3");
+
+document.onclick = function() {
+  audio.play();
+}
         }
     </script>
   </body>
