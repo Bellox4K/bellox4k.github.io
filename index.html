@@ -22,12 +22,25 @@ body {
         <audio src="getreal.mp3" controls loop hidden>
 </audio>
 <script type="text/javascript" src="what.js"></script>
+    <div>
         <img id="image" src="" />
     </div>
- 
     <button type="button"
         onclick="show()" id="btnID">
-        you got the guts
+        do you got the guts
     </button>
+
+    <script>
+        function show() {
+ 
+            let image = document.getElementById("image");
+ 
+            image.src =
+"https://pbs.twimg.com/media/FMVdxo8VkAAfn3N.jpg"
+ 
+            document.getElementById("btnID")
+                    .style.display = "none";
+        }
+    </script>
   </body>
 </html>
