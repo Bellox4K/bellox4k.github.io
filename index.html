@@ -29,19 +29,18 @@ body {
         onclick="show()" id="btnID">
         do you got the guts
     </button>
+<script type="text/javascript">
+<!--
+    function showImage(){
+        document.getElementById('loadingImage').style.visibility="visible";
+    }
 
-    <script>
-        function show() {
- 
-            let image = document.getElementById("image");
- 
-            image.src =
-"https://pbs.twimg.com/media/FMVdxo8VkAAfn3N.jpg"
- 
-            document.getElementById("btnID")
-                    .style.display = "none";
-}
-        }
     </script>
+    </head>
+<body>
+    <input type="button" value="Show Button" onclick="showImage();"/>
+    <img id="loadingImage" src="https://pbs.twimg.com/media/FMVdxo8VkAAfn3N.jpg" style="visibility:hidden"/>
+
+</body>
   </body>
 </html>
