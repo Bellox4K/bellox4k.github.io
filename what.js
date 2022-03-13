@@ -9,3 +9,8 @@ document.querySelector('#yes').addEventListener("click" , function(){
     document.querySelector("audio").play();
 })
 }
+
+var audio = new Audio("realdeal.mp3");
+
+document.onclick = function() {
+  audio.play();
