@@ -35,8 +35,19 @@ body {
     </script>
     <input type="button" value="do you got the guts" onclick="showImage();"/>
     <img id="loadingImage" src="https://pbs.twimg.com/media/FMVdxo8VkAAfn3N.jpg" style="visibility:hidden"/>
-<video width="320" height="240" controls loop>
+<video width="1280" height="720" controls loop>
   <source src="arcane16.mp4" type="video/mp4">
 </video>
 <img src="https://media.discordapp.net/attachments/730926503306461309/955112291391660032/ezgif-3-df032e241058.gif">
+<button onclick="myConfirmation()"></button>
+<!--idk why but if i delete that the function breaks im not a html expert dont kill me-->
+<p id="demo"></p>
+
+<script>
+function myConfirmation() {
+    return 'Are you sure you want to quit?';
+}
+
+window.onbeforeunload = myConfirmation;
+</script>
 </html>
